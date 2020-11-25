@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flex Layout 3</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                flex-direction: row;
+                min-height: 90vh;
+            }
+            .NavClass{
+                background: #D7E8D4;
+                flex: .5;
+            }
+            .DivClass{
+                display: flex;
+                flex-direction: column;
+                flex: 2.5;
+            }
+            .Content{
+                display: flex;
+                flex-direction: row;
+            }
+            .Content > article {
+                flex: 4;
+                min-height: 60vh;
+            }
+            header, footer{
+                background: yellowgreen;
+                height: 20vh;
+            }
+            header, footer, article, nav {
+                padding: 1em;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <nav class="NavClass">Nav</nav>
+        <div class="DivClass">
+            <header>Header</header>
+            <main class="Content">
+                <article>Article</article>
+            </main>
+            <footer class="FooterClass">Footer</footer>
+        </div>
+    </body>
+
+</html>

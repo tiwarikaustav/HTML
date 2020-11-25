@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested media objects</title>
+    <style>
+        .media {
+          display: flex;
+          align-items: flex-start;
+          background: beige;
+          padding: 1em;
+          border-radius: 10px;
+          max-width: 50em;
+        }
+        .media-object {
+          margin-right: 1em;
+        }
+        .media-body {
+          flex: 1;
+        }
+        .media-heading {
+          margin: 0 0 .5em;
+        }
+      </style>
+</head>
+<body>
+    <div class="media">
+        <img class="media-object" src="..\assests\img6.jpg" alt="Sample photo">
+        <div class="media-body">
+          <h3 class="media-heading">Refreshing as mint!</h3>
+          <p>This is a paragraph. Vist this amazing piece of architecture
+            and get a chance to dine with the architect himself. Excited yet?</p>
+      
+          <div class="media">
+            <img class="media-object" src="..\assests\img3.jpg" alt="Sample photo">
+            <div class="media-body">
+              <h3 class="media-heading">And then moving here</h3>
+              <p>This is a paragraph. Vist this amazing piece of architecture
+                and get a chance to dine with the architect himself. Excited yet?</p>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+</body>
+</html>
